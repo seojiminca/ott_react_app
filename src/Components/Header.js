@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
+
 
 //styled를 위해 이름을 변경
 const Header = styled.header`
@@ -26,6 +27,11 @@ const Item = styled.li`
   width: 80px;
   height: 50px;
   text-align: center;
+  border-bottom: 3px solid
+  //styled components에서는 $ 로 자바스크립트를 불러온다
+  //li자체에 current라는 속성을 등록 
+    ${props => (props.current ? "#3498db" : "transparent")};
+  transition: border-bottom 0.5s ease-in-out;
 `;
 
 const SLink = styled(Link)`
@@ -35,18 +41,18 @@ const SLink = styled(Link)`
   justify-content: center;
 `;
 
-export default () => (
+export default withRouter(({ location: { pathname }}) => (
     <Header>
         <List>
-            <Item>
+            <Item current={pathname === "/"}>
                 <SLink to="/">Movies</SLink>
             </Item>
-            <Item>
+            <Item current={pathname === "/tv"}>
                 <SLink to="/tv">TV</SLink>
             </Item>
-            <Item>
+            <Item current={pathname === "/search"}>
                 <SLink to="/search">Search</SLink>
             </Item>
         </List>
     </Header>
-);
+));
