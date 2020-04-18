@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="81fd0456-d21f-4654-a35e-3833f67d73a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Screen/Home/HomeContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen/Home/HomeContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Screen/Home/HomePresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen/Home/HomePresenter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Screen/Search/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen/Search/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Screen/TV/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen/TV/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screen/TV/TVContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen/TV/TVContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screen/TV/TVPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen/TV/TVPresenter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +78,7 @@
       <updated>1586585252566</updated>
       <workItem from="1586585258673" duration="2050000" />
       <workItem from="1586587787986" duration="5509000" />
-      <workItem from="1587028159383" duration="7080000" />
+      <workItem from="1587028159383" duration="7964000" />
     </task>
     <servers />
   </component>

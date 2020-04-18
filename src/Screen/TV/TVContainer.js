@@ -1,11 +1,16 @@
 import React, {Component} from 'react';
+import TvPresenter from "./TVPresenter";
 
 class TVContainer extends Component {
     render() {
         return (
-            <div>
-                <h1>TV</h1>
-            </div>
+            <TvPresenter
+                topRated={}
+                popular={}
+                airingToday={}
+                loading={}
+                error={}
+            />
         );
     }
 }
