@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import styled from "styled-components";
 import Loader from "../../Components/Loader";
 import Section from "../../Components/Section";
+import Poster from "../../Components/Poster";
 
 // 2. 상수형함수 선언.
 const HomePresenter = ({nowPlaying, upcoming, popular, loading, error}) =>
@@ -19,7 +20,15 @@ const HomePresenter = ({nowPlaying, upcoming, popular, loading, error}) =>
                 // Section에서 미리 지정해둔 title과 그 밑의 내용 children.
                 <Section title="현재상영작">
                     {nowPlaying.map(movie =>
-                        <span key={movie.id}>{movie.title}</span>
+                        // <span key={movie.id}>{movie.title}</span>
+                        <Poster
+                            key={movie.id}
+                            id={movie.id}
+                            title={movie.title}
+                            imgUrl={movie.poster_path}
+                            year={movie.release_date}
+                            rating={movie.vote_average}
+                        />
                     )}
                 </Section>
             )}
