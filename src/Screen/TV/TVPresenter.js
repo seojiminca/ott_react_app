@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Loader from "../../Components/Loader";
 import Section from "../../Components/Section";
+import Poster from "../../Components/Poster";
 
 const Container = styled.div`
     
@@ -19,19 +20,41 @@ const TvPresenter = ({topRated, popular, airingToday, loading, error}) =>
             {/*movie도 이렇게 간단히 하기.*/}
             <Section title="Top Rated">
                 {topRated.map(tv =>
-                    <span key={tv.id}>{tv.name}</span>
+                    //<span key={tv.id}>{tv.name}</span>
+                    <Poster
+                        key={tv.id}
+                        id={tv.id}
+                        title={tv.name}
+                        imgUrl={tv.poster_path}
+                        year={tv.first_air_date}
+                        rating={tv.vote_average}
+                    />
                 )}
             </Section>
 
             <Section title="Popular">
                 {popular.map(tv =>
-                    <span key={tv.id}>{tv.name}</span>
+                    <Poster
+                        key={tv.id}
+                        id={tv.id}
+                        title={tv.name}
+                        imgUrl={tv.poster_path}
+                        year={tv.first_air_date}
+                        rating={tv.vote_average}
+                    />
                 )}
             </Section>
 
             <Section title="Airing Today">
                 {airingToday.map(tv =>
-                    <span key={tv.id}>{tv.name}</span>
+                    <Poster
+                        key={tv.id}
+                        id={tv.id}
+                        title={tv.name}
+                        imgUrl={tv.poster_path}
+                        year={tv.first_air_date}
+                        rating={tv.vote_average}
+                    />
                 )}
             </Section>
         </Container>

@@ -36,14 +36,31 @@ const HomePresenter = ({nowPlaying, upcoming, popular, loading, error}) =>
             {upcoming && (
                 <Section title="상영예정작">
                     {upcoming.map(movie =>
-                        <span key={movie.id}>{movie.title}</span>
+                       // <span key={movie.id}>{movie.title}</span>
+                       // <Poster/> HTML의 internal closing 을 닫아야 자동완성기능을 사용한다.
+                        <Poster
+                            key={movie.id}
+                            id={movie.id}
+                            title={movie.title}
+                            imgUrl={movie.poster_path}
+                            year={movie.release_date}
+                            rating={movie.vote_average}
+                        />
                     )}
                 </Section>
             )}
 
             <Section title="인기작">
                 {popular.map(movie =>
-                    <span key={movie.id}>{movie.title}</span>
+                    //<span key={movie.id}>{movie.title}</span>
+                    <Poster
+                        key={movie.id}
+                        id={movie.id}
+                        title={movie.title}
+                        imgUrl={movie.poster_path}
+                        year={movie.release_date}
+                        rating={movie.vote_average}
+                    />
                 )}
             </Section>
         </div>
