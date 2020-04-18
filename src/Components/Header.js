@@ -11,7 +11,7 @@ const Header = styled.header`
   left: 0;
   width: 100%;
   height: 50px;
-  display: flex;
+  display: flex; 
   align-items: center;
   background-color: rgba(20, 20, 20, 0.8);
   z-index: 10;
@@ -36,9 +36,9 @@ const Item = styled.li`
 
 const SLink = styled(Link)`
   height: 50px;
-  display: flex;
+  display: flex; //무조건 1행 수평정렬. 커서 자리가 없으면 크기를 줄여서라도. 
   align-items: center;
-  justify-content: center;
+  justify-content: center; //수평여백 menu bar에 자주사용. 
 `;
 
 export default withRouter(({ location: { pathname }}) => (

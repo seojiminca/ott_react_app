@@ -45,3 +45,5 @@ export const tvApi = {
             }
         })
 };
+
+export default api;

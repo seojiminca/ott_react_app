@@ -4,6 +4,8 @@
     <list default="true" id="81fd0456-d21f-4654-a35e-3833f67d73a2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -71,7 +74,8 @@
       <option name="presentableId" value="Default" />
       <updated>1586585252566</updated>
       <workItem from="1586585258673" duration="2050000" />
-      <workItem from="1586587787986" duration="5190000" />
+      <workItem from="1586587787986" duration="5509000" />
+      <workItem from="1587028159383" duration="5224000" />
     </task>
     <servers />
   </component>
@@ -83,21 +87,21 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1586585734160" />
-    <state width="1419" height="226" key="GridCell.Tab.0.bottom" timestamp="1586589936055">
+    <state width="1419" height="226" key="GridCell.Tab.0.bottom" timestamp="1586601905494">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586589936055" />
-    <state width="1419" height="226" key="GridCell.Tab.0.center" timestamp="1586589936052">
+    <state width="1419" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586601905494" />
+    <state width="1419" height="226" key="GridCell.Tab.0.center" timestamp="1586601905492">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="226" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586589936052" />
-    <state width="1419" height="226" key="GridCell.Tab.0.left" timestamp="1586589936050">
+    <state width="1419" height="226" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586601905492" />
+    <state width="1419" height="226" key="GridCell.Tab.0.left" timestamp="1586601905489">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="226" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586589936050" />
-    <state width="1419" height="226" key="GridCell.Tab.0.right" timestamp="1586589936053">
+    <state width="1419" height="226" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586601905489" />
+    <state width="1419" height="226" key="GridCell.Tab.0.right" timestamp="1586601905493">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="226" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586589936053" />
+    <state width="1419" height="226" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586601905493" />
   </component>
 </project>

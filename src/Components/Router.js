@@ -5,8 +5,8 @@ import Search from "../Screen/Search";
 import Tv from "../Screen/TV";
 import Header from "./Header";
 
-//단순 기능만 필요해서 class형으로 사용하지않아도 된다.
-// export.default 를 이용해서 바로 내보낸다.
+// 단순 기능만 필요해서 class형으로 사용하지않아도 된다.
+// export.default 를 따로 밑에 적지않고 바로 적어서 내보낸다.
 // 화면이동. url은 소문자
 export default () => (
     <Router>
