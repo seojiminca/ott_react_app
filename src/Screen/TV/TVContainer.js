@@ -4,13 +4,14 @@ import TvPresenter from "./TVPresenter";
 class TVContainer extends Component {
     render() {
         return (
-            <TvPresenter
-                topRated={}
-                popular={}
-                airingToday={}
-                loading={}
-                error={}
-            />
+            <h1>1234</h1>
+            // <TvPresenter
+            //     topRated={}
+            //     popular={}
+            //     airingToday={}
+            //     loading={}
+            //     error={}
+            ///>
         );
     }
 }
