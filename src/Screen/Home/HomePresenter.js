@@ -13,11 +13,22 @@ const HomePresenter = ({nowPlaying, upcoming, popular, loading, error}) =>
     ) : (
         //여러개의 객체를 div로 묶어준다.
         <div>
+            {/*더세세한 조건일뿐 map으로 바로 뿌려줘도된다*/}
             {nowPlaying && nowPlaying.length > 0 &&
                 nowPlaying.map(movie =>
                     <span key={movie.id}>{movie.title}</span>
                 )
             }
+            <p>구분선.</p>
+            {upcoming &&
+                upcoming.map(movie =>
+                    <span key={movie.id}>{movie.title}</span>
+                )
+            }
+            <p>구분선.</p>
+            {popular.map(movie =>
+                <span key={movie.id}>{movie.title}</span>
+            )}
         </div>
     )
 

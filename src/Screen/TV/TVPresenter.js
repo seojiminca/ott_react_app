@@ -3,15 +3,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Loader from "../../Components/Loader";
 
 // 2.
-const TvPresenter = ({topRated, popular, airingToday, loading, error}) => {
-    return (
+const TvPresenter = ({topRated, popular, airingToday, loading, error}) =>
+    loading ? (
+        <Loader/>
+    ) : (
         <div>
-            <h1>tv</h1>
+            {topRated.map(tv =>
+                <span key={tv.id}>{tv.name}</span>
+            )}
+            <p>구분선.</p>
+            {popular.map(tv =>
+                <span key={tv.id}>{tv.name}</span>
+            )}
+            <p>구분선.</p>
+            {airingToday.map(tv =>
+                <span key={tv.id}>{tv.name}</span>
+            )}
         </div>
     );
-};
 
 // 4.
 TvPresenter.propTypes = {
