@@ -3,15 +3,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from "styled-components";
+import Loader from "../../Components/Loader";
 
 // 2. 상수형함수 선언.
-const HomePresenter = ({nowPlaying, upcoming, popular, loading, error}) => {
-    return (
+const HomePresenter = ({nowPlaying, upcoming, popular, loading, error}) =>
+    loading ? (
+        // component니까 <Loader />
+        <Loader/>
+    ) : (
+        //여러개의 객체를 div로 묶어준다.
         <div>
-            <h1>rrrrr</h1>
+            {nowPlaying && nowPlaying.length > 0 &&
+                nowPlaying.map(movie =>
+                    <span key={movie.id}>{movie.title}</span>
+                )
+            }
         </div>
-    );
-};
+    )
 
 // 4. 속성선언.
 HomePresenter.propTypes = {

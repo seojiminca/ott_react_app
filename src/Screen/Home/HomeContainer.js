@@ -4,6 +4,7 @@ import {moviesApi} from "../../API";
 
 class HomeContainer extends Component {
 
+    // React.js 에서는 데이터를 담기위해 변수처럼 state를 사용.
     // 상태, 함수, 라이프사이클함수.
     // 빌드 1
     state = {
