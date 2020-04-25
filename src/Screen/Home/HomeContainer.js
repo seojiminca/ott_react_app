@@ -42,8 +42,6 @@ class HomeContainer extends Component {
     }
 
 
-
-
     render() {
 
         // 화면에 보여줄 상태나 함수값을 재선언하는 위치.
