@@ -75,7 +75,7 @@ Poster.propTypes = {
     title: PropTypes.string.isRequired,
     year: PropTypes.string,
     rating: PropTypes.number,
-    isMovie: PropTypes.bool
+    isMovie: PropTypes.bool.isRequired
 };
 
 export default Poster;
