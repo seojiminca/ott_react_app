@@ -1,5 +1,21 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
+
+const Container = styled.div`
+  padding: 0px 20px;
+`;
+
+const Form = styled.form`
+  margin-bottom: 20px;
+  width: 100%;
+`;
+
+const Input = styled.input`
+  all: unset;
+  font-size: 28px;
+  width: 100%;
+`;
 
 class SearchPresenter extends Component {
     render() {
@@ -16,11 +32,15 @@ class SearchPresenter extends Component {
         } = this.props;
 
         return (
-            <div>
-                <text>
-                    {movieResults}
-                </text>
-            </div>
+            <Container>
+                <Form>
+                    <Input
+                        placeholder="Search Movies or TV Shows..."
+                        value={keyword}
+                        onChange={updateKeyword}
+                    />
+                </Form>
+            </Container>
         );
     }
 }

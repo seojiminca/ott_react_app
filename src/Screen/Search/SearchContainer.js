@@ -38,7 +38,7 @@ class SearchContainer extends Component {
 
         try{
             const{
-                data: {results: movieResults}
+                data: {results: movieResults} //data안에있는 results에 있는 내용을 movieResults라고 칭하겠다.
             } = await moviesApi.search(keyword);
 
             const{
