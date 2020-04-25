@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Loader from "../../Components/Loader";
 import Section from "../../Components/Section";
 import Poster from "../../Components/Poster";
+import Error from "../../Components/Error";
 
 const Container = styled.div`
   padding: 0px 20px;
@@ -79,8 +80,18 @@ class SearchPresenter extends Component {
                                 ))}
                             </Section>
                         )}
+
                     </>
                 )}
+                {/*network나 api가 잘못되었을때의 에러. */}
+                {error && <Error color={"#e74c3c"} text={error} />}
+
+                {/*결과값이 없을때의 에러. */}
+                {tvResults && movieResults &&
+                    tvResults.length === 0 &&
+                    movieResults.length === 0 &&
+                    <Error color='#95a5a6' text='Nothing found' />
+                }
             </Container>
         );
     }

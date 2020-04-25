@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Loader from "../../Components/Loader";
 import Section from "../../Components/Section";
 import Poster from "../../Components/Poster";
+import Error from "../../Components/Error";
 
 const Container = styled.div`
     
@@ -57,6 +58,10 @@ const TvPresenter = ({topRated, popular, airingToday, loading, error}) =>
                     />
                 )}
             </Section>
+
+            {/*error 에 데이터가 있으면 Error component로 뿌려주기 */}
+            {error && <Error color={"#e74c3c"} text={error} />}
+
         </Container>
     );
 

@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81fd0456-d21f-4654-a35e-3833f67d73a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/ggggg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Error.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Poster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Poster.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screen/Home/HomeContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen/Home/HomeContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screen/Home/HomePresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen/Home/HomePresenter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Screen/Search/SearchPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen/Search/SearchPresenter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Screen/TV/TVPresenter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Screen/TV/TVPresenter.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +47,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/src/Screen/Search" />
       <recent name="$PROJECT_DIR$/src/Screen/TV" />
       <recent name="$PROJECT_DIR$/src/Screen/Detail" />
       <recent name="$PROJECT_DIR$/src/Screen/Home" />
-      <recent name="$PROJECT_DIR$/src/Components" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -81,7 +83,7 @@
       <workItem from="1586587787986" duration="5509000" />
       <workItem from="1587028159383" duration="20670000" />
       <workItem from="1587618967599" duration="371000" />
-      <workItem from="1587721448358" duration="13599000" />
+      <workItem from="1587721448358" duration="14961000" />
     </task>
     <servers />
   </component>

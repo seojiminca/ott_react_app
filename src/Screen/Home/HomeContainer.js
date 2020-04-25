@@ -35,7 +35,7 @@ class HomeContainer extends Component {
 
 
         }catch {
-            this.setState({error: "error 발생함."})
+            this.setState({error: "error 발생."})
         }finally {
             this.setState({loading: false})
         }

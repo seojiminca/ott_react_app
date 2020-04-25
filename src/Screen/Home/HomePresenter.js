@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import Loader from "../../Components/Loader";
 import Section from "../../Components/Section";
 import Poster from "../../Components/Poster";
+import Error from "../../Components/Error";
 
 // 2. 상수형함수 선언.
 const HomePresenter = ({nowPlaying, upcoming, popular, loading, error}) =>
@@ -62,6 +63,9 @@ const HomePresenter = ({nowPlaying, upcoming, popular, loading, error}) =>
                     />
                 )}
             </Section>
+
+            {/*Container 에 error data가 있으면 컬러를 바꿔라 */}
+            {error && <Error color={"#e74c3c"} text={error} />}
         </div>
     )
 
