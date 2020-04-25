@@ -18,7 +18,7 @@ class SearchContainer extends Component {
 
         if(this.state.keyword !== ""){ //keyword(사용자 입력값이) 빈칸이 아니라면.
             // networking. API태움.
-
+            this.searchByTerm()
         }
     }
 
@@ -31,6 +31,27 @@ class SearchContainer extends Component {
             keyword: value //keyword에 사용자 입력값을 넣겠다.
         });
     };
+
+    searchByTerm = async () => {
+        const {keyword} = this.state;
+        this.setState({loading: true});
+
+        try{
+            const{
+                data: {results: movieResults}
+            } = await moviesApi.search(keyword);
+
+            const{
+                data: {results: tvResults} //data안에있는 results에 있는 내용을 tvResults라고 칭하겠다.
+            } = await tvApi.search(keyword);
+
+            this.setState({movieResults,tvResults}) //movieResults에 movieResults가 들어갔으니 setState변경.
+        }catch{
+            this.setState({error: "Can't find results."})
+        }finally {
+            this.setState({loading: false})
+        }
+    }
 
     render() {
         //2
