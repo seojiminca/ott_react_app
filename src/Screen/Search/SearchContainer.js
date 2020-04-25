@@ -56,6 +56,7 @@ class SearchContainer extends Component {
     render() {
         //2
         const {movieResults, tvResults, keyword, loading, error} = this.state;
+        console.log(tvResults)
 
         return (
            //3

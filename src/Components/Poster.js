@@ -55,7 +55,7 @@ const Poster = ({id, imgUrl, title, year, rating}) => (
             <Image bgUrl={
                 `https://image.tmdb.org/t/p/w300${imgUrl}`
             }/>
-            <Rating>⭐️ {rating} / 10</Rating>
+            <Rating><span role="img">⭐️</span> {rating} / 10</Rating>
         </ImgContainer>
         <Title>{title.slice(0, 18)}...</Title>
         <Year>{year}</Year>

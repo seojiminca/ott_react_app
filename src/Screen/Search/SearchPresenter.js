@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Loader from "../../Components/Loader";
+import Section from "../../Components/Section";
 
 const Container = styled.div`
   padding: 0px 20px;
@@ -33,13 +35,35 @@ class SearchPresenter extends Component {
 
         return (
             <Container>
-                <Form>
+                <Form onSubmit={send}>
                     <Input
                         placeholder="Search Movies or TV Shows..."
                         value={keyword}
                         onChange={updateKeyword}
                     />
                 </Form>
+                {loading ? (
+                    <Loader/>
+                ) : (
+                    <>
+                        {/*movie의 결과값이 존재하면 뿌려주는 내용.*/}
+                        {movieResults && movieResults.length > 0 && (
+                            <Section title="Movie Results">
+                                {movieResults.map(movie => (
+                                    <span key={movie.id}>{movie.title}</span>
+                                ))}
+                            </Section>
+                        )}
+
+                        {tvResults && tvResults.length > 0 && (
+                            <Section title="TV Results">
+                                {tvResults.map(tv => (
+                                    <span key={tv.id}>{tv.name}</span>
+                                ))}
+                            </Section>
+                        )}
+                    </>
+                )}
             </Container>
         );
     }

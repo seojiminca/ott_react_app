@@ -20,10 +20,10 @@ export const moviesApi = {
             }
         }),
     //검색 키워드를 매개변수로 던져서 쿼리로 인식을 할 수 있게 변경.
-    search: keyword =>
+    search: term =>
         api.get("search/movie", {
             params: {
-                query: encodeURIComponent(keyword)
+                query: encodeURIComponent(term)
             }
         })
 };
