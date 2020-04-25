@@ -28,6 +28,7 @@ const HomePresenter = ({nowPlaying, upcoming, popular, loading, error}) =>
                             imgUrl={movie.poster_path}
                             year={movie.release_date}
                             rating={movie.vote_average}
+                            isMovie={true} //처음에 false를  movie선택과 동시에 true로 변경해준다. 이걸 안해주면 movie로 변경이 안됨.
                         />
                     )}
                 </Section>
@@ -45,6 +46,7 @@ const HomePresenter = ({nowPlaying, upcoming, popular, loading, error}) =>
                             imgUrl={movie.poster_path}
                             year={movie.release_date}
                             rating={movie.vote_average}
+                            isMovie={true}
                         />
                     )}
                 </Section>
@@ -60,6 +62,7 @@ const HomePresenter = ({nowPlaying, upcoming, popular, loading, error}) =>
                         imgUrl={movie.poster_path}
                         year={movie.release_date}
                         rating={movie.vote_average}
+                        isMovie={true}
                     />
                 )}
             </Section>

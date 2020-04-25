@@ -4,6 +4,7 @@ import Home from "../Screen/Home";  //index를 기본으로 가지고 온다.
 import Search from "../Screen/Search";
 import TV from "../Screen/TV";
 import Header from "./Header";
+import Detail from "../Screen/Detail";
 
 // 단순 기능만 필요해서 class형으로 사용하지않아도 된다.
 // export.default 를 따로 밑에 적지않고 바로 적어서 내보낸다.
@@ -16,6 +17,8 @@ export default () => (
                 <Route path="/" exact component={Home} />
                 <Route path="/search" exact component={Search} />
                 <Route path="/tv" exact component={TV} />
+                <Route path="/movie/:id" component={Detail} />
+                <Route path="/show/:id" component={Detail} />
                 <Redirect from="*" to="/" />
             </Switch>
         </>

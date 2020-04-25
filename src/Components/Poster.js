@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 const Container = styled.div`
   font-size: 12px;
@@ -49,21 +50,23 @@ const Year = styled.span`
   color: rgba(255,255,255,0.5);
 `;
 
-const Poster = ({id, imgUrl, title, year, rating}) => (
-    <Container>
-        <ImgContainer>
-            <Image bgUrl={
-                imgUrl ? (
-                    `https://image.tmdb.org/t/p/w300${imgUrl}`
-                ):(
-                    require('../img/ggggg.png') //이미지 넣기위한 path.
-                )
-            }/>
-            <Rating><span role="img">⭐️</span> {rating} / 10</Rating>
-        </ImgContainer>
-        <Title>{title.slice(0, 18)}...</Title>
-        <Year>{year}</Year>
-    </Container>
+const Poster = ({id, imgUrl, title, year, rating, isMovie = false}) => (
+    <Link to={isMovie ? `/movie/${id}` : `/show/${id}`}>
+        <Container>
+            <ImgContainer>
+                <Image bgUrl={
+                    imgUrl ? (
+                        `https://image.tmdb.org/t/p/w300${imgUrl}`
+                    ) : (
+                        require('../img/ggggg.png') //이미지 넣기위한 path.
+                    )
+                }/>
+                <Rating><span role="img">⭐️</span> {rating} / 10</Rating>
+            </ImgContainer>
+            <Title>{title.slice(0, 18)}...</Title>
+            <Year>{year}</Year>
+        </Container>
+    </Link>
 );
 
 Poster.propTypes = {
@@ -71,7 +74,8 @@ Poster.propTypes = {
     imgUrl: PropTypes.string,
     title: PropTypes.string.isRequired,
     year: PropTypes.string,
-    rating: PropTypes.number
+    rating: PropTypes.number,
+    isMovie: PropTypes.bool
 };
 
 export default Poster;
