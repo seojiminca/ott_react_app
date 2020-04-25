@@ -55,6 +55,7 @@ class DetailContainer extends Component {
     render() {
 
         const {result, error, loading} = this.state;
+        console.log(result)
 
         return (
             <DetailPresenter loading={loading} error={error} result={result} />
