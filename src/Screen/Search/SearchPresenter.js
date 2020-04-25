@@ -11,7 +11,8 @@ class SearchPresenter extends Component {
             error,
             loading,
             keyword,
-            send
+            send,
+            updateKeyword
         } = this.props;
 
         return (
@@ -30,7 +31,8 @@ SearchPresenter.propTypes = {
     error : PropTypes.string,
     loading : PropTypes.bool.isRequired,
     keyword : PropTypes.string.isRequired,
-    send : PropTypes.func.isRequired //버튼이 눌렸을때 기능이 실행해야되니까 function
+    send : PropTypes.func.isRequired, //버튼이 눌렸을때 기능이 실행해야되니까 function
+    updateKeyword : PropTypes.func.isRequired //키워드 수정 인식을 위해.
 };
 
 export default SearchPresenter;
