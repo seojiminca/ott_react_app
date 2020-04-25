@@ -24,12 +24,40 @@ const Backdrop = styled.div`
   z-index: 0;
 `;
 
+const Content = styled.div`
+  display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+`;
+
+const Cover = styled.div`
+  width: 30%;
+  background-image: url(${props => props.bgImage});
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  border-radius: 5px;
+`;
+
 const DetailPresenter = ({result, loading, error}) => (
     loading ? (
         <Loader/>
     ) : (
         <Container>
             <Backdrop bgImage={`https://image.tmdb.org/t/p/original${result.backdrop_path}`}/>
+            <Content>
+                <Cover
+                    bgImage={
+                        result.poster_path
+                            ? (`https://image.tmdb.org/t/p/original${result.poster_path}`
+                            ) : (
+                                require("../../img/ggggg.png")
+                            )
+                    }
+                />
+            </Content>
         </Container>
     )
 
