@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Loader from "../../Components/Loader";
 import Section from "../../Components/Section";
+import Poster from "../../Components/Poster";
 
 const Container = styled.div`
   padding: 0px 20px;
@@ -50,7 +51,15 @@ class SearchPresenter extends Component {
                         {movieResults && movieResults.length > 0 && (
                             <Section title="Movie Results">
                                 {movieResults.map(movie => (
-                                    <span key={movie.id}>{movie.title}</span>
+                                    //<span key={movie.id}>{movie.title}</span>
+                                    <Poster
+                                        key={movie.id}
+                                        id={movie.id}
+                                        title={movie.title}
+                                        imgUrl={movie.poster_path}
+                                        year={movie.release_date}
+                                        rating={movie.vote_average}
+                                    />
                                 ))}
                             </Section>
                         )}
@@ -58,7 +67,15 @@ class SearchPresenter extends Component {
                         {tvResults && tvResults.length > 0 && (
                             <Section title="TV Results">
                                 {tvResults.map(tv => (
-                                    <span key={tv.id}>{tv.name}</span>
+                                    //<span key={tv.id}>{tv.name}</span>
+                                    <Poster
+                                        key={tv.id}
+                                        id={tv.id}
+                                        title={tv.name}
+                                        imgUrl={tv.poster_path}
+                                        year={tv.first_air_date}
+                                        rating={tv.vote_average}
+                                    />
                                 ))}
                             </Section>
                         )}

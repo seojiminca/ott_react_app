@@ -53,7 +53,11 @@ const Poster = ({id, imgUrl, title, year, rating}) => (
     <Container>
         <ImgContainer>
             <Image bgUrl={
-                `https://image.tmdb.org/t/p/w300${imgUrl}`
+                imgUrl ? (
+                    `https://image.tmdb.org/t/p/w300${imgUrl}`
+                ):(
+                    require('../img/ggggg.png') //이미지 넣기위한 path.
+                )
             }/>
             <Rating><span role="img">⭐️</span> {rating} / 10</Rating>
         </ImgContainer>
