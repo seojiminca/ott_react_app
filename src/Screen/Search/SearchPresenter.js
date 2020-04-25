@@ -16,7 +16,9 @@ class SearchPresenter extends Component {
 
         return (
             <div>
-
+                <text>
+                    {movieResults}
+                </text>
             </div>
         );
     }
